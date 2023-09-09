@@ -19,7 +19,9 @@ export default function Header() {
 									<Button
 										variant={"outline"}
 										onClick={() => {
-											window.open("https://www.github.com/noahpittman");
+											window.open(
+												"https://github.com/noahpittman/ai_summarizer_app"
+											);
 										}}
 									>
 										GitHub

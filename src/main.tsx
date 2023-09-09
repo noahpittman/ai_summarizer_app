@@ -10,9 +10,7 @@ import { store } from "./services/store";
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
 		<Provider store={store}>
-			<main className="max-w-screen-lg mx-auto px-16">
-				<App />
-			</main>
+			<App />
 			<Toaster />
 		</Provider>
 	</React.StrictMode>

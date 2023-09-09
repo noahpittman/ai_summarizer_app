@@ -38,16 +38,17 @@ const Demo = () => {
 									id="url"
 									className=" w-full rounded-sm text-black
                                 border-0 py-1.5 pl-10 ring-1 ring-inset 
-                                rounded-r-none placeholder:text-accent focus:ring-2 
+                                rounded-r-none placeholder:text-accent dark:placeholder:text-primary focus:ring-2 
+								 dark:focus:ring-primary
                                 focus:ring-inset focus:ring-accent sm:text-sm sm:leading-6 peer"
 									placeholder="Enter a URL"
 								/>
 								<button
 									type="submit"
-									className=" peer-focus:ring-accent peer-focus:ring-2 relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold ring-1 ring-inset bg-white  hover:bg-secondary"
+									className=" dark:peer-focus:ring-primary peer-focus:ring-accent peer-focus:ring-2 relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold ring-1 ring-inset bg-white  hover:bg-secondary dark:hover:bg-gray-200"
 								>
 									<CornerDownLeft
-										className="-ml-0.5 h-5 w-5 "
+										className="-ml-0.5 h-5 w-5 dark:text-secondary"
 										aria-hidden="true"
 									/>
 								</button>

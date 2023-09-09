@@ -8,15 +8,15 @@ const options = {
 		length: "3",
 	},
 	headers: {
-		"X-RapidAPI-Key": "50ea36f870msh511f646a505895bp15070bjsnc70ba4061a4b",
-		"X-RapidAPI-Host": "article-extractor-and-summarizer.p.rapidapi.com",
+		"X-RapidAPI-Key": `${import.meta.env.VITE_RAPID_API_KEY}`,
+		"X-RapidAPI-Host": `${import.meta.env.VITE_BASE_URL}`,
 	},
 };
 
 export const articleApi = createApi({
 	reducerPath: "articleApi",
 	baseQuery: fetchBaseQuery({
-		baseUrl: "https://article-extractor-and-summarizer.p.rapidapi.com/",
+		baseUrl: `${import.meta.env.VITE_BASE_URL}`,
 	}),
 	endpoints: (builder) => ({
 		getSummary: builder.query({

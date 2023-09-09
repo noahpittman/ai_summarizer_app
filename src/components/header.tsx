@@ -30,8 +30,8 @@ export default function Header() {
 							</div>
 							<p className="mt-6 text-lg leading-8 font-[satoshi]">
 								Input the URL of any article on the internet, and allow GPT-4 to
-								summarize for you. Ask any questions you might have, and dive
-								into an in depth conversation on any subject.
+								summarize for you.
+								{/* Ask any questions you might have, and dive into an in depth conversation on any subject. */}
 							</p>
 						</div>
 					</div>

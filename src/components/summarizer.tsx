@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Copy, CornerDownLeft, Link2 } from "lucide-react";
+import { Copy, CopyCheck, CornerDownLeft, Link2 } from "lucide-react";
 import { toast } from "react-hot-toast";
 
 import {
@@ -11,13 +11,13 @@ import {
 import { useLazyGetSummaryQuery } from "@/services/article";
 import { Skeleton } from "./ui/skeleton";
 
-const Demo = () => {
+const Summarizer = () => {
 	const [article, setArticle] = useState({
 		url: "",
 		summary: "",
 	});
-
 	const [allArticles, setAllArticles] = useState([]);
+	const [copied, setCopied] = useState("");
 
 	const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
@@ -55,9 +55,18 @@ const Demo = () => {
 		}
 	};
 
+	const handleCopy = (copyUrl: string) => {
+		setCopied(copyUrl);
+		navigator.clipboard.writeText(copyUrl);
+		// @ts-ignore
+		setTimeout(() => setCopied(false), 3000);
+		toast.success("Copied to clipboard.");
+	};
+
 	return (
 		<section className="mt-4 mx-auto w-full max-w-xl">
-			{/* Search */}
+			{/* Form */}
+
 			<div className="flex flex-col w-full gap-2">
 				<form
 					className="relative flex justify-center items-center"
@@ -98,14 +107,16 @@ const Demo = () => {
 						</div>
 					</div>
 				</form>
+
 				{/* URL History */}
+
 				{allArticles.length > 0 && (
 					<div className=" w-9/12 mx-auto">
 						<Accordion type="single" collapsible>
 							<AccordionItem value="item-1">
 								<AccordionTrigger>Article History</AccordionTrigger>
 								<AccordionContent>
-									{allArticles.map((item, index) => (
+									{allArticles.slice(0, 5).map((item, index) => (
 										<div>
 											<div
 												key={`link-${index}`}
@@ -113,12 +124,19 @@ const Demo = () => {
 												className="flex gap-4 my-2 items-center"
 											>
 												<button
-													onClick={() => {}}
+													// @ts-ignore
+													onClick={() => handleCopy(item.url)}
 													className="hover:bg-card bg-secondary rounded-md h-[2rem] aspect-square flex items-center justify-center mt-2"
 												>
-													<Copy className="w-[60%] h-[60%] object-contain" />
+													{/* 
+													// @ts-ignore */}
+													{copied === item.url ? (
+														<CopyCheck className="w-[60%] h-[60%] object-contain" />
+													) : (
+														<Copy className="w-[60%] h-[60%] object-contain" />
+													)}
 												</button>
-												<p className="font-[satoshi] flex-1 items-center truncate">
+												<p className="font-[satoshi] flex-1 items-center truncate cursor-pointer">
 													{/* 
 												// @ts-ignore */}
 													{item.url}
@@ -170,4 +188,4 @@ const Demo = () => {
 	);
 };
 
-export default Demo;
+export default Summarizer;

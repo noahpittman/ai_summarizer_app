@@ -154,13 +154,13 @@ const Summarizer = () => {
 			<div className="my-10 max-w-full flex justify-center items-center">
 				{isFetching ? (
 					<div className="flex flex-col gap-3">
-						<Skeleton className="w-[240px] h-[20px] rounded-full" />
-						<Skeleton className="w-[400px] h-[12px] rounded-full" />
-						<Skeleton className="w-[380px] h-[12px] rounded-full" />
-						<Skeleton className="w-[390px] h-[12px] rounded-full" />
-						<Skeleton className="w-[400px] h-[12px] rounded-full" />
-						<Skeleton className="w-[380px] h-[12px] rounded-full" />
-						<Skeleton className="w-[390px] h-[12px] rounded-full" />
+						<Skeleton className="w-[120px] sm:w-[240px] h-[20px] rounded-full" />
+						<Skeleton className="w-[200px] sm:w-[400px] h-[12px] rounded-full" />
+						<Skeleton className="w-[190px] sm:w-[380px] h-[12px] rounded-full" />
+						<Skeleton className="w-[195px] sm:w-[390px] h-[12px] rounded-full" />
+						<Skeleton className="w-[200px] sm:w-[400px] h-[12px] rounded-full" />
+						<Skeleton className="w-[190px] sm:w-[380px] h-[12px] rounded-full" />
+						<Skeleton className="w-[195px] sm:w-[390px] h-[12px] rounded-full" />
 					</div>
 				) : error ? (
 					<p className="font-[inter] font-bold text-primary text-center">

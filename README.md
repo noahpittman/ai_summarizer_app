@@ -1,5 +1,5 @@
 # SummarAIze | Summarize Articles using OpenAI
-<img width="777" alt="Application Screenshot" src="https://github.com/noahpittman/ai_summarizer_app/assets/102493385/74f07771-f53f-4849-9ff2-6006deb6604a">
+<img width="717" alt="App Screenshot" src="https://github.com/noahpittman/ai_summarizer_app/assets/102493385/26de3e41-684f-4c4f-aea8-1622c3c1a771">
 
 ### About
 

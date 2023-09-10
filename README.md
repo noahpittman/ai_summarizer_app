@@ -3,7 +3,7 @@
 
 ### About
 
-An article summarizer which uses an OpenAI API to summarize text provided via fetched websites.
+An article summarizer which uses an OpenAI API to summarize text provided via fetched websites. I created this as an introduction to working with RapidAPI & building OpenAI applications.
 
 ### Built With
 
@@ -13,12 +13,6 @@ An article summarizer which uses an OpenAI API to summarize text provided via fe
 - OpenAI API via RapidAPI
 - TailwindCSS
 - ShadCN UI
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-See the [open issues](https://github.com/noahpittman/ai_summarizer_app/issues) for a full list of proposed features (and known issues).
 
 ## License
 

@@ -7,7 +7,7 @@ An article summarizer which uses an OpenAI API to summarize text provided via fe
 
 ### Built With
 
-- React
+- React / TypeScript
 - Vite
 - Redux / Redux Toolkit
 - OpenAI API via RapidAPI

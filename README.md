@@ -1,27 +1,36 @@
-# React + TypeScript + Vite
+# SummarAIze | Summarize Articles using OpenAI
+<img width="777" alt="Application Screenshot" src="https://github.com/noahpittman/ai_summarizer_app/assets/102493385/74f07771-f53f-4849-9ff2-6006deb6604a">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### About
 
-Currently, two official plugins are available:
+An article summarizer which uses an OpenAI API to summarize text provided via fetched websites.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Built With
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- Redux / Redux Toolkit
+- OpenAI API via RapidAPI
+- TailwindCSS
+- ShadCN UI
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Usage
 
-- Configure the top-level `parserOptions` property like this:
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+See the [open issues](https://github.com/noahpittman/ai_summarizer_app/issues) for a full list of proposed features (and known issues).
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+## Contact
+
+Your Name - [@n0ahpittman](https://twitter.com/n0ahpittman) - noahpittman00@gmail.com
+
+Project Link: [https://github.com/noahpittman/ai_summarizer_app](https://github.com/noahpittman/ai_summarizer_app)
+
+
+## Acknowledgments
+
+- [Anthony - Creator of the API used.](https://rapidapi.com/user/restyler)

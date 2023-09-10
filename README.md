@@ -20,7 +20,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [@n0ahpittman](https://twitter.com/n0ahpittman) - noahpittman00@gmail.com
+Noah Pittman - [@n0ahpittman](https://twitter.com/n0ahpittman) - noahpittman00@gmail.com
 
 Project Link: [https://github.com/noahpittman/ai_summarizer_app](https://github.com/noahpittman/ai_summarizer_app)
 

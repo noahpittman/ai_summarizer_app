@@ -1,27 +1,30 @@
-# React + TypeScript + Vite
+# SummarAIze | Summarize Articles using OpenAI
+<img width="717" alt="App Screenshot" src="https://github.com/noahpittman/ai_summarizer_app/assets/102493385/26de3e41-684f-4c4f-aea8-1622c3c1a771">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### About
 
-Currently, two official plugins are available:
+An article summarizer which uses an OpenAI API to summarize text provided via fetched websites. I created this as an introduction to working with RapidAPI & building OpenAI applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Built With
 
-## Expanding the ESLint configuration
+- React / TypeScript
+- Vite
+- Redux / Redux Toolkit
+- OpenAI API via RapidAPI
+- TailwindCSS
+- ShadCN UI
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## License
 
-- Configure the top-level `parserOptions` property like this:
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Contact
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Noah Pittman - [@n0ahpittman](https://twitter.com/n0ahpittman) - noahpittman00@gmail.com
+
+Project Link: [https://github.com/noahpittman/ai_summarizer_app](https://github.com/noahpittman/ai_summarizer_app)
+
+
+## Acknowledgments
+
+- [Anthony - Creator of the API used.](https://rapidapi.com/user/restyler)
